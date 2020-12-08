@@ -48,7 +48,7 @@ public class BenchMark implements HttpFunction {
     public void rotateAndResizeImage(Blackhole bm) {
         try {
             // reads in the image
-            BufferedImage image = ImageIO.read(new File("image.jpg"));
+            BufferedImage image = ImageIO.read(new File("small-size-image.jpg"));
             // Creates output images
             BufferedImage outputImage = new BufferedImage(ClassValues.scaledWidth, ClassValues.scaledHeight, image.getType());
 
